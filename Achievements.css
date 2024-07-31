@@ -1,0 +1,122 @@
+ 
+
+  .achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: gold;
+    padding: 150px 20px;
+  }
+  
+  .achievement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    background-color: #1a1a1a;
+    transition: transform 0.3s;
+  }
+  
+  .achievement:hover {
+    transform: scale(1.05);
+  }
+  
+  .achievement.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .achievement-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .achievement-text.left {
+    text-align: left;
+  }
+  
+  .achievement-text.right {
+    text-align: right;
+  }
+  
+  .achievement-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .achievement-text p {
+    font-size: 1.2rem;
+  }
+  
+  .achievement-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .achievement-image img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .achievement-image img:hover {
+    transform: scale(1.1);
+  }
+
+
+  .download-btn {
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .download-btn:hover {
+    background-color: black;
+    color: gold;
+  }
+  
+  @media (max-width: 768px) {
+    .achievement {
+      flex-direction: column;
+    }
+  
+    .achievement.reverse {
+      flex-direction: column;
+    }
+  
+    .achievement-text {
+      text-align: center;
+    }
+  
+    .achievement-text.right,
+    .achievement-text.left {
+      text-align: center;
+    }
+  
+    .achievement-image {
+      flex-direction: column;
+    }
+  
+    .achievement-image img {
+      max-width: 80%;
+    }
+  }
+  

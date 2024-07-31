@@ -1,0 +1,90 @@
+
+  .navbar {
+    background: transparent !important; /* Ensure background stays transparent */
+    color: gold;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar h1 {
+    font-size: 2rem;
+    text-shadow: 0 0 10px silver, 0 0 20px gold;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: gold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: silver;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: gold;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .navbar ul {
+      display: none;
+    }
+  
+    .navbar.active ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for dropdown */
+      padding: 20px 0;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .navbar a {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar h1 {
+      font-size: 1.5rem;
+    }
+  
+    .navbar a {
+      font-size: 1.2rem;
+    }
+  }
+  

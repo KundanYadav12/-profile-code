@@ -1,0 +1,38 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    /* background-color: #000; */
+
+    display:flex;
+    justify-content:end;
+    align-items:center;
+    padding:10px 0;
+    z-index:1000;
+}
+
+.footer a{
+    color:#fff;
+    margin: 0 15px;
+    text-decoration:none;
+    font-size: 3.5rem;
+}
+
+.footer-icon{
+    transition: color 0.3s;
+}
+
+.footer-icon:hover{
+    color: #25d366;
+}
+
+.footer a[href^="mailto:"] .footer-icon:hover {
+    color: #D44638; /* Gmail red */
+  }
+
+  @media (max-width: 768px) {
+    .footer a {
+      font-size: 3.2rem;
+      margin: 0 10px;
+    }
+  }

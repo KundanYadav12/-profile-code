@@ -1,0 +1,14 @@
+.app {
+  font-family: 'Arial, sans-serif';
+  color: gold;
+  /* background-color: black; */
+   
+}
+
+.app * {
+  box-sizing: border-box;
+}
+
+h2 {
+  text-shadow: 0 0 10px silver, 0 0 20px gold;
+}
